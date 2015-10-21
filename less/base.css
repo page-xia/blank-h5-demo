@@ -1,0 +1,13 @@
+html {
+  font: 14px/22px STHeiti, Helvetica Neue, Heiti SC, Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+@media screen and (min-device-width: 360px) {
+  html {
+    font: 16px/24px STHeiti, Helvetica Neue, Heiti SC, Microsoft YaHei, Arial, Helvetica, sans-serif;
+  }
+}
+.container {
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  margin: 0.625rem;
+}

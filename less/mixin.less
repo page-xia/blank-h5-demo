@@ -1,0 +1,62 @@
+@import "variables";
+
+.check(@width,@height,@color){
+    .check-com(@width,@height,@color,-135);
+}
+.check-up(@width,@height,@color){
+    .check-com(@width,@height,@color,45);
+}
+.check-left(@width,@height,@color){
+    .check-com(@width,@height,@color,-45);
+}
+.check-right(@width,@height,@color){
+    .check-com(@width,@height,@color,135);
+}
+.check-com(@width,@height,@color,@degNum){
+    border-top: 1px @color solid;
+    border-left: 1px @color solid;
+    width: @width;
+    height: @height;
+    display: inline-block;
+    transform:rotate(@degNum*@rotate);
+    -webkit-transform:rotate(@degNum*@rotate);
+}
+
+.rotate(@degNum){
+    transform:rotate(@degNum*@rotate);
+    -webkit-transform:rotate(@degNum*@rotate);
+}
+.rotate-diy(@degNum){
+    -webkit-transform-origin: @degNum;
+    -moz-transform-origin: @degNum;
+    -ms-transform-origin: @degNum;
+    -o-transform-origin: @degNum;
+    transform-origin: @degNum;
+}
+.scale(@degNum){
+    transform:scale(@degNum);
+    -ms-transform:scale(@degNum);
+    -moz-transform:scale(@degNum);
+    -webkit-transform:scale(@degNum);
+    -o-transform:scale(@degNum);
+}
+.scaleY(@degNum){
+    transform:scaleY(@degNum);
+    -ms-transform:scaleY(@degNum);
+    -moz-transform:scaleY(@degNum);
+    -webkit-transform:scaleY(@degNum);
+    -o-transform:scaleY(@degNum);
+    transform-origin: center top;
+    -webkit-transform-origin: center top;
+}
+.translateX(@num){
+    -webkit-transform: translateX(@num);
+    -moz-transform: translateX(@num);
+    -ms-transform: translateX(@num);
+    transform: translateX(@num);
+}
+.icon-bg(@width,@height,@size:contain){
+    height: @height;
+    width: @width;
+    background-size: @size;
+}
